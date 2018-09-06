@@ -1,0 +1,57 @@
+.portfolio{
+  .column();
+
+  align-items: center;
+  flex-basis: 100%;
+  height: 1400px;
+  &__info{
+    .column();
+    height: 230px;
+    justify-content: space-around;
+    align-items: center;
+    &--title{
+      font-family: 'Source Sans Pro';
+      color: @dark-gray;
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: 4px;
+      line-height: 12px;
+      text-transform: uppercase;
+    }
+    &--name{
+      .OpenSans();
+      color:  @light-gray;
+      width: 85%;
+      text-align: center;
+    }
+  }
+
+}
+.filter-button-group{
+  height: 60px;
+
+}
+.button{
+  .OpenSans2();
+  color: @dark-gray;
+  text-align: center;
+  border: none;
+  position: relative;
+  height: 33px;
+  background-color: transparent;
+  &__activ{
+
+    &:after{
+      content: "";
+      border-bottom: 2px solid @green;
+      width: 38px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      bottom: 0;
+      height: 2px;
+      position: absolute;
+    }
+  }
+
+}

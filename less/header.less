@@ -1,0 +1,76 @@
+body{
+  background: @dark-white;
+}
+.header{
+  background: url("../img/IMAGE.png") no-repeat;
+  background-size: cover;
+  height: 737px;
+  .column();
+
+  &__nav{
+    .row();
+    align-items: center;
+    height: 115px;
+  }
+  &__scroll{
+    display: flex;
+    border-radius: 50%;
+    background-color:  @green;
+    width: 36px;
+    height: 36px;
+    align-self: center;
+  }
+  &__scroll--img{
+    width: 12px;
+    height: 7px;
+    margin: auto;
+  }
+}
+.menu{
+  .row();
+  width: 330px;
+  height: 35px;
+  align-items: center;
+  &__li{
+    width: 82px;
+    text-align: center;
+  }
+  &__li:hover{
+    display: flex;
+    -moz-border-radius: 23px;
+    -webkit-border-radius: 23px;
+    border-radius: 23px;
+    border: 1px solid @white;
+    width: 80px;
+    height: 33px;
+  }
+  &__li--link{
+    .OpenSans2();
+    color:  @white;
+    text-decoration: none;
+    margin: auto;
+
+  }
+}
+.title{
+  .column();
+  flex-basis: 60%;
+  justify-content: center;
+  align-items: center;
+  &__name{
+    font-family: 'Source Sans Pro';
+    color: @white;
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 7px;
+    line-height: 70px;
+  }
+  &__text{
+    .OpenSans();
+    color:  @white;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    width: 42%;
+  }
+}

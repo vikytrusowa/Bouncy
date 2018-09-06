@@ -1,0 +1,44 @@
+.testimonial{
+  .column();
+  height: 650px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  &__text{
+    width: 30%;
+  }
+}
+.background{
+  background: @white;
+  height: 320px;
+}
+.slide{
+  .row();
+  align-items: center;
+  height: 287px;
+  &__info{
+    .column();
+    width: 62%;
+    justify-content: space-around;
+    height: 150px;
+    &--text{
+      .OpenSans2();
+      color:  @light-gray;
+      line-height: 28px;
+      text-align: left;
+    }
+    &--name{
+      .OpenSans2();
+      color: @green;
+      font-weight: 700;
+      line-height: 20px;
+
+    }
+    &--work{
+      .OpenSans();
+      color:  @gray;
+      line-height: 20px;
+
+    }
+  }
+}

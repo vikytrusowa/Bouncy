@@ -1,0 +1,46 @@
+.footer{
+  .column();
+  height: 250px;
+  background: @white;
+  align-items: center;
+  justify-content: space-around;
+  &__text{
+    .OpenSans();
+    color:  @light-gray;
+  }
+}
+.social{
+  width: 200px;
+  height: 30px;
+}
+.sprite{
+  background: url("../img/Group.svg") no-repeat;
+  position: relative;
+  width: 26px;
+  height: 26px;
+  &__facebook{
+    position: absolute;
+    background-position: 0 0;
+    left: 43%;
+  }
+  &__twitter{
+    background-position: -36px 0;
+    position: absolute;
+    left: 46%;
+  }
+  &__linkedin{
+    background-position: -72px 0;
+    position: absolute;
+    left: 49%;
+  }
+  &__instagram{
+    background-position: -108px 0;
+    position: absolute;
+    left: 52%;
+  }
+  &__vimeo{
+    background-position: -144px 0;
+    position: absolute;
+    left: 55%;
+  }
+}
